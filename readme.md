@@ -56,7 +56,7 @@ Agora que você configurou tudo, basta executar o script `main.py`. Se estiver u
 Para rodar o script completo, use o comando abaixo no terminal:
 
     ```bash
-    python main.py
+    'python main.py'
     ```
 
 ### 5. Visualizar Resultados 📊
