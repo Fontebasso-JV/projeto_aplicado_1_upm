@@ -2,21 +2,17 @@
 # Importando pandas
 import pandas as pd
 import glob
+import os
 
 # %%
+# Caminho arquivos Parquet
+diretorio = r"data\sisvan.parquet"
+
+# Usando glob para listar todos os arquivos .parquet no diretório
+arquivos_parquet = glob.glob(os.path.join(diretorio, '*.parquet'))
+
 # Criando df
-
-csv_files = glob.glob('data/planos_saude_abrangencia_nacional/*.csv')
-df = pd.concat([pd.read_csv(file, sep=';') for file in csv_files], ignore_index=True)
+df = pd.concat([pd.read_parquet(arquivo) for arquivo in arquivos_parquet])
 
 # %%
-# Amostra dos dados
-df.head(5)
-
-# %%
-# Metadados
-
-df.dtypes
-
-# %%
-#
+df.head()

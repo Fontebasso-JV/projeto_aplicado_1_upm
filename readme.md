@@ -2,7 +2,7 @@
 
 ## 🔍 Visão Geral
 
-Este script utiliza **pandas** para ler e processar vários arquivos CSV relacionados a planos de saúde de abrangência nacional. O objetivo é carregar os dados em um único DataFrame e realizar análises básicas, como visualização de uma amostra dos dados e verificação dos tipos de dados.
+Este script utiliza **pandas** para ler e processar vários arquivos parquets relacionados ao estado de nutrição da população. O objetivo é carregar os dados em um único DataFrame e realizar análises básicas, como visualização de uma amostra dos dados e verificação dos tipos de dados.
 
 ## 🛠️ Passos para Configurar e Executar o Projeto
 
@@ -27,22 +27,22 @@ Antes de rodar o script, é necessário instalar as bibliotecas Python que o pro
     pip install -r requirements.txt
     ```
 
-### 3. Organizar os Arquivos CSV 📁
+### 3. Organizar os Arquivos PARQUET 📁
 
-Para que o script funcione corretamente, você precisará baixar os arquivos CSV e organizá-los da seguinte maneira:
+Para que o script funcione corretamente, você precisará baixar os arquivos parquet e organizá-los da seguinte maneira:
 
 1. Crie uma pasta chamada `data` na raiz do projeto.
-2. Dentro da pasta `data`, crie uma subpasta chamada `planos_saude_abrangencia_nacional`.
-3. Coloque todos os arquivos CSV relacionados a planos de saúde nessa subpasta (`data/planos_saude_abrangencia_nacional`).
+2. Dentro da pasta `data`, crie uma subpasta chamada `sisvan.parquet`.
+3. Coloque todos os arquivos CSV relacionados a planos de saúde nessa subpasta (`data/sisvan.parquet`).
 
 A estrutura de diretórios deve ficar assim:
 
     ```
     seu_projeto/
     ├── data/
-    │   └── planos_saude_abrangencia_nacional/
-    │       ├── arquivo1.csv
-    │       ├── arquivo2.csv
+    │   └── sisvan.parquet/
+    │       ├── arquivo1.parquet
+    │       ├── arquivo2.parquet
     │       └── ...
     ├── main.py
     ├── requirements.txt
@@ -59,11 +59,6 @@ Para rodar o script completo, use o comando abaixo no terminal:
     python main.py
     ```
 
-### 5. Visualizar Resultados 📊
-
-Após executar o script, ele exibirá uma amostra dos dados e os tipos de dados presentes no DataFrame.
-
----
 
 Se tiver alguma dúvida ou encontrar problemas, sinta-se à vontade para pedir ajuda! 😊
 
@@ -72,7 +67,6 @@ Se tiver alguma dúvida ou encontrar problemas, sinta-se à vontade para pedir a
 
 Datasets a serem capturados:
 
-1. **Planos de Saúde (Nacional)**: Informações sobre planos de saúde em nível nacional. ✅
+1. **SISVAN (Nacional)**: Informações sobre o estado de nutrição e em nível nacional. ✅
 2. **IBGE**: Dados do Instituto Brasileiro de Geografia e Estatística, que podem incluir informações demográficas e econômicas. 🔍
-3. **Orçamento Público Saúde Brasil**: Dados relacionados ao orçamento público destinado à saúde no Brasil. 🔍
 
