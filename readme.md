@@ -40,7 +40,7 @@ A estrutura de diretórios deve ficar assim:
     ```
     seu_projeto/
     ├── data/
-    │   └── sisvan.parquet/
+    │   └── df_novo.parquet/
     │       ├── arquivo1.parquet
     │       ├── arquivo2.parquet
     │       └── ...
