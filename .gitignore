@@ -1,3 +1,5 @@
 .venv
 *.csv
 sisvan.parquet
+df_novo.parquet
+main_pyspark.py

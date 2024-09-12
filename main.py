@@ -6,7 +6,7 @@ import os
 
 # %%
 # Caminho arquivos Parquet
-diretorio = r"data\sisvan.parquet"
+diretorio = r"data\df_novo.parquet" 
 
 # Usando glob para listar todos os arquivos .parquet no diretório
 arquivos_parquet = glob.glob(os.path.join(diretorio, '*.parquet'))
