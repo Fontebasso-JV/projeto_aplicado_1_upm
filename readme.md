@@ -1,72 +1,54 @@
-# 📝 Instruções para Rodar o Script `main.py`
+## Projeto de Saúde e Nutrição com base nos dados do Sisvan
 
-## 🔍 Visão Geral
+Este projeto tem intuito de contribuir para o planejamento de políticas públicas estaduais, fundamentado nos dados disponíveis na base nacional do Sistema de Vigilância Alimentar e Nutricional (Sisvan). 
 
-Este script utiliza **pandas** para ler e processar vários arquivos parquets relacionados ao estado de nutrição da população. O objetivo é carregar os dados em um único DataFrame e realizar análises básicas, como visualização de uma amostra dos dados e verificação dos tipos de dados.
+## Objetivo
 
-## 🛠️ Passos para Configurar e Executar o Projeto
+O objetivo do projeto é elaborar um estudo de Análise Exploratória de Dados sobre o contexto do estado nutricional da população brasileira, em específico das crianças com idades compreendidas entre 0 e 6 anos.
 
-### 1. Instalar a Extensão do Jupyter no VSCode (ou outro editor) 🧩
+## Estrutura do Projeto
 
-Para facilitar a visualização e execução do código no formato de células, recomendamos instalar a extensão do Jupyter:
+- Extrair Dados: Acessar os dados disponíveis sobre estado de nutrição infantil disponível no Datasus e extrair os dados necessários;
 
-1. Abra o VSCode (ou outro editor de sua preferência).
-2. Vá até a aba de **Extensões** (ícone de quadrado à esquerda).
-3. Pesquise por **"Jupyter"** e clique em **Instalar**.
+- Transformar Dados: Após a etapa de extração, seguiremos com as etapas de filtragem dos dados, processamento e apresentação das informações; 
 
-Isso permitirá que você execute o código em células diretamente no seu editor.
+- Análise e Visualização: Estudo de investigação um conjunto de
+dados e sintetizar as suas características principais, usando técnicas e métodos
+quantitativos e de visualização de dados, que ampare o planejamento de políticas públicas no combate a desnutrição infantil;
 
-### 2. Instalar as Dependências 📦
+- Relatório Final: Destacaremos as principais descobertas, oferecendo algumas recomendações com base nas percepções encontradas na análise. Com isso, visamos elaborar índices que amparem o Ministério da Saúde e as Secretarias Estaduais a tomar decisões baseadas em dados.
 
-Antes de rodar o script, é necessário instalar as bibliotecas Python que o projeto utiliza. Para isso, siga os passos abaixo:
+## Recursos Utilizados
 
-1. Certifique-se de estar no diretório raiz do projeto.
-2. Abra o terminal e execute o seguinte comando para instalar as dependências listadas no arquivo `requirements.txt`:
+- Python
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+- Google Colab
 
-### 3. Organizar os Arquivos PARQUET 📁
+- Visual Studio Code
 
-Para que o script funcione corretamente, você precisará baixar os arquivos parquet e organizá-los da seguinte maneira:
-
-1. Crie uma pasta chamada `data` na raiz do projeto.
-2. Dentro da pasta `data`, crie uma subpasta chamada `sisvan.parquet`.
-3. Coloque todos os arquivos CSV relacionados a planos de saúde nessa subpasta (`data/sisvan.parquet`).
-
-A estrutura de diretórios deve ficar assim:
-
-    ```
-    seu_projeto/
-    ├── data/
-    │   └── df_novo.parquet/
-    │       ├── arquivo1.parquet
-    │       ├── arquivo2.parquet
-    │       └── ...
-    ├── main.py
-    ├── requirements.txt
-    └── README.md
-    ```
-
-### 4. Executar o Script 🚀
-
-Agora que você configurou tudo, basta executar o script `main.py`. Se estiver utilizando o Jupyter, você pode rodar célula por célula diretamente no seu editor.
-
-Para rodar o script completo, use o comando abaixo no terminal:
-
-    ```bash
-    python main.py
-    ```
+- Github
 
 
-Se tiver alguma dúvida ou encontrar problemas, sinta-se à vontade para pedir ajuda! 😊
+## Bibliotecas Python
+
+- Pandas
+
+- PySpark
 
 
-## 📂 Datasets
+## Docentes:
 
-Datasets a serem capturados:
+- Professor Thiago Graziani Traue
 
-1. **SISVAN (Nacional)**: Informações sobre o estado de nutrição e em nível nacional. ✅
-2. **IBGE**: Dados do Instituto Brasileiro de Geografia e Estatística, que podem incluir informações demográficas e econômicas. 🔍
+- Professor Tutor Vinicius Piro Barragam 
 
+
+## Discentes:
+
+- Bruna Freitas Soares
+
+- Heverton Valerio de Lima
+
+- João Victor Fontebasso Alves
+
+- Mariana Silva de Oliveira
