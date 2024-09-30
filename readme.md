@@ -58,47 +58,88 @@ quantitativos e de visualização de dados, que ampare o planejamento de políti
 ---
 ## Variáveis utilizadas
 
+### **Código do Acompanhamento**  
+> #### CO_ACOMPANHAMENTO  
+> Código único que identifica  
+o acompanhamento  
+realizado pelo indivíduo  
+> ***
+
 ### **Código do Indivíduo**
 > #### CO_PESSOA_SISVAN   
-> Código único que identifica
-o acompanhamento
-realizado pelo indivíduo
+> Código de identificação do
+indivíduo
 > ***  
 
-&nbsp;
+### **Status Participa ANDI**  
+> #### ST_PARTICIPA_ANDI  
+> Status que indica se o município  
+é participante do programa Atenção Nutricional à Desnutrição Infantil (ANDI) S: sim; N:
+não  
+> ***
 
 ### **Código do Município**
 > #### CO_MUNICIPIO_IBGE   
 > Código IBGE do município.
-Identifica o município onde
-foi realizado o acompanhamento do
-indivíduo.
 > ***
 
-&nbsp;
+### **Código do CNES**  
+> #### CO_CNES  
+> Estabelecimento de Saúde
+> ***
 
 ### **Idade em Anos**
 > #### NU_IDADE_ANO   
-> Anos de vida de uma
-pessoa no momento do
-acompanhamento.
-Cálculo gerado no sistema
-de acordo com a Data de
-Nascimento
+> Anos de vida do indivíduo
 > ***
 
-&nbsp;
+### **Código da Fase da Vida**  
+> #### NU_FASE_VIDA  
+|Código|Descrição|
+|---|---|
+|1|'MENOR DE 6 MESES'|
+|2|'ENTRE 6 MESES A 2 ANOS'|
+|3|'ENTRE 2 ANOS A 5 ANOS'|
+|4|'ENTRE 5 ANOS A 7 ANOS'|
+|5|'ENTRE 7 ANOS A 10 ANOS'| 
+|6|'ADOLESCENTE'|
+|7|'ADULTO'|
+|8|'IDOSO'|
+
+### **Fase da Vida**  
+> #### DS_FASE_VIDA  
+> Campo textual com a
+descrição das fases da vida
+> ***
 
 ### **Sexo**
 > #### SG_SEXO   
-
 |Código|Descrição|
 |---|---|
 |0|Masculino|
 |1|Feminino|
 
-&nbsp;
+### **Código da Raça/Cor**  
+> #### CO_RACA_COR  
+> Código da raça/cor declarada pelo indivíduo:  
+Branca, Preta, Amarela, Parda, Indígena, ou Sem Informação  
+> **Códigos:**  
 
+|Código|Descrição|
+|---|---|
+|X | Invalido|
+|01 | Branca  |
+|02 | Preta  |
+|03 | Amarela | 
+|04 | Parda  |
+|05 | Indígena|  
+|99 | Sem Informação  |
+> ***
+
+### **Raça/Cor**  
+> #### DS_RACA_COR  
+> Descrição textual da raça/cor declarada pelo indivíduo  
+> ***
 
 ### **Código do Povo ou Comunidade Tradicional**
 > #### CO_POVO_COMUNIDADE   
@@ -127,7 +168,10 @@ Nascimento
 |20 | VAZANTEIROS|
 |21 | OUTROS|
 
-&nbsp;
+### **Descrição do Povo ou Comunidade Tradicional**  
+> #### DS_POVO_COMUNIDADE  
+> Descrição do povo ou comunidade  
+> ***
 
 ### **Código da Escolaridade**
 > #### CO_ESCOLARIDADE   
@@ -148,20 +192,73 @@ Nascimento
 |12 | Ensino Médio EJA (Supletivo)|
 |13 | Superior, Aperfeiçoamento, Especialização, Mestrado, Doutorado|
 
-&nbsp;
+
+### **Descrição a Escolaridade**
+> #### DS_ESCOLARIDADE   
+> Descrição da Escolaridade  
+> ***  
+
+### **Data do Acompanhamento**
+> #### DT_ACOMPANHAMENTO   
+> Data do Acompanhamento nutricional do Indivíduo  
+> ***  
+
+### **Competência do Acompanhamento (ANO MÊS)**
+> #### NU_COMPETENCIA   
+> Competência do acompanhamento
+nutricional que este registro faz referência.  
+Formato do campo: YYYYMM (ANO MÊS)  
+> ***  
+
+### **Peso**
+> #### NU_PESO   
+> Peso do Indivíduo em Quilos  
+> ***  
+
+### **Altura**
+> #### NU_ALTURA   
+> Altura em Centímetros  
+> ***  
+
+### **Índice de Massa Corporal - IMC**
+> #### DS_IMC   
+> Índice de Massa Corporal - IMC  
+> ***  
+
+### **Índice de Massa Corporal Pré Gestacional - IMC**
+> #### DS_IMC_PRE_GESTACIONAL   
+> Índice de Massa Corporal Pré Gestacional - IMC  
+> ***  
 
 ### **Estado Nutricional de Peso para Idade de Crianças (0 a 10 anos)**
 > #### PESO X IDADE   
-> Anos de vida de uma
-A fase da vida é calculada
-de acordo com a
-quantidades de dias de
-vida de um indivíduo no
-momento do
-acompanhamento.
+> Cálculo Nutricional de
+crianças (0 a 10 anos) com
+as seguintes informações:
+'Muito baixo peso para a
+idade', 'Baixo peso para a
+idade', 'Peso adequado
+para idade', 'Peso elevado
+para a idade'
 > ***
 
-&nbsp;
+### **Estado Nutricional de Peso para Altura de Crianças (0 a 10 anos)**
+> #### PESO X ALTURA   
+> Cálculo Nutricional de
+crianças (0 a 5 anos) com
+as seguintes informações:
+'Magreza acentuada',
+'Magreza', 'Peso Adequado
+ou Eutrófico', 'Risco de
+sobrepeso', 'Sobrepeso';
+crianças (5 a 10 anos) com
+as seguintes informações:
+'Magreza acentuada',
+'Magreza', 'Peso Adequado
+ou Eutrófico', 'Sobrepeso',
+'Obesidade' 
+   
+> ***  
 
 ### **Estado Nutricional de Altura para Idade de Crianças (0 a 10 anos)**
 > #### CRI. ALTURA X IDADE   
@@ -171,10 +268,8 @@ as seguintes informações:
 'Muito baixa estatura para
 idade', 'Baixa estatura para
 idade', 'Estatura
-adequada para a idade' 
+adequada para a idade'
 > ***
-
-&nbsp;
 
 ### **Estado Nutricional de IMC para Idade de Crianças (0 a 10 anos)**
 > #### CRI. IMC X IDADE
@@ -184,7 +279,45 @@ as seguintes informações:
 'Magreza acentuada’,
 ‘Magreza’, ‘Eutrofia', 'Risco
 de sobrepeso',
-'Sobrepeso', 'Obesidade' 
+'Sobrepeso', 'Obesidade'
 > ***
 
-&nbsp;
+
+### **Estado Nutricional de Altura para Idade de Adolescentes (10 a menos de 20 anos)**  
+> #### ADO. ALTURA X IDADE  
+> Cálculo Nutricional de adolescentes (10 a menos de 20 anos) com as seguintes informações:  
+> 'Muito baixa estatura para idade', 'Baixa estatura para idade', 'Estatura adequada para a idade'  
+> ***  
+
+### **Estado Nutricional de IMC para Idade de Adolescentes (10 a menos de 20 anos)**  
+> #### ADO. IMC X IDADE  
+> Cálculo Nutricional de adolescentes (10 a menos de 20 anos) com as seguintes informações:  
+> 'Magreza acentuada', 'Magreza', 'Eutrofia', 'Risco de sobrepeso', 'Sobrepeso', 'Obesidade'  
+
+### **Estado Nutricional de Adultos**  
+> #### CO_ESTADO_NUTRI_ADULTO  
+> Cálculo Nutricional de adultos (20 a 60 anos) com as seguintes informações:  
+> 'Baixo peso', 'Adequado ou Eutrófico', 'Sobrepeso', 'Obesidade Grau I', 'Obesidade Grau II', 'Obesidade Grau III'  
+> ***  
+
+### **Estado Nutricional de Idosos**  
+> #### CO_ESTADO_NUTRI_IDOSO  
+> Cálculo Nutricional de idosos (60 anos ou mais) com as seguintes informações:  
+> 'Baixo peso', 'Adequado ou Eutrófico', 'Sobrepeso'  
+> ***  
+
+### **Estado Nutricional de Gestantes**  
+> #### CO_ESTADO_NUTRI_IMC_SEMGEST  
+> Cálculo Nutricional de Adolescentes e adultas (10 a 60 anos) com as seguintes informações:  
+> 'Baixo peso', 'Adequado ou Eutrófico', 'Sobrepeso', 'Obesidade'  
+> ***  
+
+### **Código do Sistema de Origem**  
+> #### CO_SISTEMA_ORIGEM_ACOMP  
+> Código do sistema de origem, 1, 'SISVAN WEB', 2, 'AUXILIO BRASIL', 4, 'ESUS AB'  
+> ***  
+
+### **Sistema de Origem**  
+> #### DS_SISTEMA_ORIGEM_ACOMP  
+> Código do sistema de origem, 1, 'SISVAN WEB', 2, 'AUXILIO BRASIL', 4, 'ESUS AB'  
+> ***  
