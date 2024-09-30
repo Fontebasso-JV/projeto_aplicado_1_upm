@@ -56,7 +56,7 @@ quantitativos e de visualização de dados, que ampare o planejamento de políti
 
 ###
 ---
-## Variáveis utilizadas
+## Variáveis do Dataset
 
 ### **Código do Acompanhamento**  
 > #### CO_ACOMPANHAMENTO  
