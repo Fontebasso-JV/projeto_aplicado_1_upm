@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/6ab699ef-cf47-417f-9fc4-80ab91229250)
+
+
 ## Projeto de Saúde e Nutrição com base nos dados do Sisvan
 
 Este projeto tem intuito de contribuir para o planejamento de políticas públicas estaduais, fundamentado nos dados disponíveis na base nacional do Sistema de Vigilância Alimentar e Nutricional (Sisvan). 
